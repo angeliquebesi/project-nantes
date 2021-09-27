@@ -1,0 +1,20 @@
+/* 
+CSS defaulting global fixes
+*/
+
+/* prevents overflow caused by margins/padding & co */
+* {
+  box-sizing: border-box; 
+}
+
+/* defaulting texte apparence  */
+body, ul, p, h1, h2, h3 {
+    font-size: 1rem;
+    line-height: 1;
+  }
+
+/* defaulting layout  */
+body {
+  margin: 0 auto;
+  max-width: 50em; /* max-width realistic */
+}
