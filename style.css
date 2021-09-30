@@ -23,6 +23,38 @@ body {
   width: 100%;
   margin: 0 auto;
   max-width: 50em; /* max-width realistic */
+  background-color: #F9FAFB;
+}
+
+h1{
+  font-family: 'Manrope', sans-serif;
+  font-style : normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 130%;
+  letter-spacing: calc(42*0.03)px;
+  margin : 10% 5%;
+}
+
+h2{
+  font-family: 'Manrope', sans-serif;
+  font-style : normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 130%;
+  letter-spacing: calc(42*0.03)px;
+  margin : 10% 5%;
+}
+
+p{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-style : normal;
+  font-size : 22px;
+  line-height: 142%;
+  letter-spacing: calc(22*0.02)px;
+  margin : auto 5%;
+  color : #6B7280;
 }
 
 /******** BARRE NAV ********/
@@ -99,3 +131,12 @@ nav {
 .menu-btn-burger::after {
   transform: translateY(-5px);
 }
+
+.heroSection, .heroCategory {
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.heroSection h1 span {
+  color : #059669;
+}
+
