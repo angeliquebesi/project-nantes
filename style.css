@@ -33,7 +33,7 @@ h1{
   font-size: 42px;
   line-height: 130%;
   letter-spacing: calc(42*0.03)px;
-  margin : 10% 5%;
+  padding : 10% 5%;
 }
 
 h2{
@@ -43,7 +43,7 @@ h2{
   font-size: 42px;
   line-height: 130%;
   letter-spacing: calc(42*0.03)px;
-  margin : 10% 5%;
+  padding : 10% 5%;
 }
 
 p{
@@ -53,8 +53,21 @@ p{
   font-size : 22px;
   line-height: 142%;
   letter-spacing: calc(22*0.02)px;
-  margin : auto 5%;
+  padding : auto 5%;
   color : #6B7280;
+}
+
+/* partie logo */
+.logo {
+  color: #059669;
+  font-style: italic;
+  font-size: 17px;
+}
+.logo em {
+  font-weight: bolder;
+}
+.logo span {
+  opacity: 0.5;
 }
 
 /******** BARRE NAV ********/
@@ -71,20 +84,7 @@ nav {
   padding: 0 1em;
 }
 
-/* partie logo */
-.logo {
-  color: #059669;
-  font-style: italic;
-  font-size: 17px;
-}
-.logo em {
-  font-weight: bolder;
-}
-.logo span {
-  opacity: 0.5;
-}
-
-/* partie naviguation */
+/* partie navigation */
 .naviguation {
   display: none;
 }
@@ -131,6 +131,13 @@ nav {
 .menu-btn-burger::after {
   transform: translateY(-5px);
 }
+/*******HERO SECTION********/
+
+.heroSection {
+  display : flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 
 .heroSection, .heroCategory {
   border-bottom: 1px solid #E5E7EB;
@@ -139,4 +146,6 @@ nav {
 .heroSection h1 span {
   color : #059669;
 }
+
+
 
