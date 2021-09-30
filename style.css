@@ -26,6 +26,7 @@ h1{
   font-size: 42px;
   line-height: 130%;
   letter-spacing: calc(42*0.03)px;
+  margin : 10% 5%;
 }
 
 h2{
@@ -46,4 +47,9 @@ p{
   line-height: 142%;
   letter-spacing: calc(22*0.02)px;
   margin : auto 5%;
+  color : #6B7280;
+}
+
+.autrement {
+  color : #059669;
 }
