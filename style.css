@@ -46,6 +46,30 @@ h2{
   padding : 10% 5%;
 }
 
+h3 {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 142%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: #6B7280; 
+}
+
+h4 {
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 256%;
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+color: #374151;
+}
+
 p{
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -55,6 +79,31 @@ p{
   letter-spacing: calc(22*0.02)px;
   padding : auto 5%;
   color : #6B7280;
+}
+
+link {
+font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 130%;
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+text-decoration-line: underline;
+color: #059669;
+}
+
+label {
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 165%;
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+color: #6B7280;
 }
 
 /* partie logo */
