@@ -17,6 +17,7 @@ body, ul, p, h1, h2, h3 {
 body {
   margin: 0 auto;
   max-width: 50em; /* max-width realistic */
+  background-color: #F9FAFB;
 }
 
 h1{
@@ -48,6 +49,10 @@ p{
   letter-spacing: calc(22*0.02)px;
   margin : auto 5%;
   color : #6B7280;
+}
+
+.heroSection, .heroCategory {
+  border-bottom: 1px solid #E5E7EB;
 }
 
 .autrement {
