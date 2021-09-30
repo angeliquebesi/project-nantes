@@ -4,17 +4,23 @@ CSS defaulting global fixes
 
 /* prevents overflow caused by margins/padding & co */
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 /* defaulting texte apparence  */
-body, ul, p, h1, h2, h3 {
-    font-size: 1rem;
-    line-height: 1;
-  }
+body,
+ul,
+p,
+h1,
+h2,
+h3 {
+  font-size: 1rem;
+  line-height: 1;
+}
 
 /* defaulting layout  */
 body {
+  width: 100%;
   margin: 0 auto;
   max-width: 50em; /* max-width realistic */
   background-color: #F9FAFB;
@@ -51,10 +57,86 @@ p{
   color : #6B7280;
 }
 
+/******** BARRE NAV ********/
+
+/*** nav container ***/
+nav {
+  border-bottom: solid;
+  border-color: #e5e7eb;
+}
+.nav-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+/* partie logo */
+.logo {
+  color: #059669;
+  font-style: italic;
+  font-size: 17px;
+}
+.logo em {
+  font-weight: bolder;
+}
+.logo span {
+  opacity: 0.5;
+}
+
+/* partie naviguation */
+.naviguation {
+  display: none;
+}
+
+/* partie burger-btn */
+.burger-btn {
+  align-self: center;
+}
+.menu-btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 8px;
+}
+
+.menu-btn-burger {
+  width: 15px;
+  height: 2px;
+  background: black;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background: black;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn-burger::before {
+  transform: translateY(5px);
+}
+.menu-btn-burger::after {
+  transform: translateY(-5px);
+}
+
 .heroSection, .heroCategory {
   border-bottom: 1px solid #E5E7EB;
 }
 
-.autrement {
+.heroSection h1 span {
   color : #059669;
 }
+
