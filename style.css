@@ -370,6 +370,7 @@ footer a:visited {
   line-height: 130%;
   color: #059669;
   text-align: right;
+}
 
 /******* RESPONSIVE ********/
 
@@ -387,17 +388,21 @@ footer a:visited {
     color: #4b5563;
     font-family: "Inter", sans-serif;
   }
+
   .naviguation a span {
     color: #059669;
     margin-right: 0;
   }
+
   .burger-btn {
     display: none;
   }
+
   .classic-btn-container {
     display: flex;
     padding: 1em;
   }
+
   .classic-btn {
     background-color: #059669;
     border: none;
@@ -406,7 +411,7 @@ footer a:visited {
     color: #FFFFFF;
     font-weight: 600;
   }
-  
+
   .section-category {
   justify-items: center;
   max-width: 100%;
@@ -451,3 +456,4 @@ footer a:visited {
   padding-bottom: 30px;
 }
 
+}
