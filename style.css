@@ -64,6 +64,10 @@ h2 {
   padding-top: 80px;
 }
 
+.text-white {
+  color: #f9fafb;
+}
+
 h3 {
   font-family: Inter;
   font-style: normal;
@@ -124,7 +128,7 @@ label {
   color: #6b7280;
 }
 
-button .primary {
+.primary {
   color: white;
   background-color: #059669;
   border: none;
@@ -134,7 +138,7 @@ button .primary {
   margin-bottom: 1em;
 }
 
-button .secondary {
+.secondary {
   color: #6b7280;
   background-color: transparent;
   border: 1px solid #6b7280;
@@ -372,6 +376,32 @@ footer a:visited {
   text-align: right;
 }
 
+.section-about {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
+  width: 100%;
+  background-color: #059669;
+}
+
+.primary-white {
+  background-color: #f9fafb;
+  display: inline-block;
+  max-width: 200px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  margin: 0 auto;
+  font-family: Inter;
+  font-weight: 500;
+  color: #059669;
+}
 /******* RESPONSIVE ********/
 
 @media screen and (min-width: 768px) {
@@ -420,7 +450,7 @@ footer a:visited {
 }
 
 .category-grid-wrapper {
-  max-width: 75%;
+  max-width: 1200px;
   margin: 50px auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -455,5 +485,4 @@ footer a:visited {
   margin: 0 auto;
   padding-bottom: 30px;
 }
-
 }
