@@ -1,6 +1,4 @@
-/* 
-CSS defaulting global fixes
-*/
+/******** GLOBAL ********/
 
 /* prevents overflow caused by margins/padding & co */
 * {
@@ -23,38 +21,51 @@ body {
   width: 100%;
   margin: 0 auto;
   max-width: 50em; /* max-width realistic */
-  background-color: #F9FAFB;
+  background-color: #f9fafb;
 }
 
-h1{
-  font-family: 'Manrope', sans-serif;
-  font-style : normal;
+h1 {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 42px;
   line-height: 130%;
-  letter-spacing: calc(42*0.03)px;
-  margin : 10% 5%;
+  letter-spacing: calc(42 * 0.03) px;
+  padding: 10% 5%;
 }
 
-h2{
-  font-family: 'Manrope', sans-serif;
-  font-style : normal;
+h2 {
+  font-family: "Manrope", sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 42px;
   line-height: 130%;
-  letter-spacing: calc(42*0.03)px;
-  margin : 10% 5%;
+  letter-spacing: calc(42 * 0.03) px;
+  padding: 10% 5%;
 }
 
-p{
-  font-family: 'Inter', sans-serif;
+p {
+  font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-style : normal;
-  font-size : 22px;
+  font-style: normal;
+  font-size: 22px;
   line-height: 142%;
-  letter-spacing: calc(22*0.02)px;
-  margin : auto 5%;
-  color : #6B7280;
+  letter-spacing: calc(22 * 0.02) px;
+  padding: auto 5%;
+  color: #6b7280;
+}
+
+/* partie logo */
+.logo {
+  color: #059669;
+  font-style: italic;
+  font-size: 17px;
+}
+.logo em {
+  font-weight: bolder;
+}
+.logo span {
+  opacity: 0.5;
 }
 
 /******** BARRE NAV ********/
@@ -71,20 +82,7 @@ nav {
   padding: 0 1em;
 }
 
-/* partie logo */
-.logo {
-  color: #059669;
-  font-style: italic;
-  font-size: 17px;
-}
-.logo em {
-  font-weight: bolder;
-}
-.logo span {
-  opacity: 0.5;
-}
-
-/* partie naviguation */
+/* partie navigation */
 .naviguation {
   display: none;
 }
@@ -131,12 +129,59 @@ nav {
 .menu-btn-burger::after {
   transform: translateY(-5px);
 }
+.classic-btn-container {
+  display: none;
+}
+/******* HERO SECTION ********/
 
-.heroSection, .heroCategory {
-  border-bottom: 1px solid #E5E7EB;
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.heroSection,
+.heroCategory {
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .heroSection h1 span {
-  color : #059669;
+  color: #059669;
 }
 
+/******* RESPONSIVE ********/
+
+@media screen and (min-width: 500px) {
+  .naviguation {
+    display: flex;
+    padding: 1em;
+  }
+  .naviguation a {
+    text-decoration: none;
+    margin: auto;
+    margin-right: 1em;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4b5563;
+    font-family: "Inter", sans-serif;
+  }
+  .naviguation a span {
+    color: #059669;
+    margin-right: 0;
+  }
+  .burger-btn {
+    display: none;
+  }
+  .classic-btn-container {
+    display: flex;
+    padding: 1em;
+  }
+  .classic-btn {
+    background-color: #059669;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+}
