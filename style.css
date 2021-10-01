@@ -215,6 +215,88 @@ nav {
   color: #059669;
 }
 
+/******** begin FOOTER desktop ********/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5em;
+  padding: 2em 0 2em 0;
+  background-color: #F3F4F6;
+  border: 1px solid #E5E7EB;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:visited {
+  color: inherit;
+}
+#footer-left {
+  margin-left:4em;
+}
+#footer-left p {
+  font-size: 0.75em;
+}
+#footer-center {
+  display: flex; 
+  flex-wrap: wrap; /* let's wrap this, rows after rows */
+  gap: 5px;
+  text-align: center;
+}
+#footer-center-links {
+  flex: 100%; /* using 100% to center content in all this wrap */
+  margin-bottom: 1em;
+}
+#footer-center-links a {
+  font-family: "Inter", sans-serif;
+  color: #4B5563;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+#footer-center .github-icon  {
+  flex: 100%;
+  font-size: 1.5em;
+}
+#footer-center .github-icon a { /* not sure i'm using the best way to handle image-in-link here */
+  color: transparent;
+  background: url("./github-icon-32px.png") no-repeat;
+  padding: 6px 4px 0px 17px;
+}
+#footer-center .small-text {
+  flex: 100%;
+  color: #9CA3AF;
+  font-size: 0.65em;
+  margin: 0;
+}
+#footer-center .small-link {
+  flex: 100%;
+  color: #9CA3AF;
+  font-size: 0.65em;
+  text-decoration: underline;
+}
+#footer-right {
+  margin-right:4em;
+}
+#footer-right .btn-propose {
+  color: white;
+  background-color: #059669;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 0 0.5em 0;
+  width: 12em;
+  margin-bottom: 1em;
+}
+#footer-right .btn-contactus {
+  color: #6b7280;
+  background-color: transparent;
+  border: 1px solid #6b7280;
+  border-radius: 6px;
+  padding: 0.5em 0 0.5em 0;
+  width: 12em;
+}
+/******** end FOOTER desktop ********/
+
+
 /******* RESPONSIVE ********/
 
 @media screen and (min-width: 500px) {
