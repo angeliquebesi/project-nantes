@@ -370,6 +370,7 @@ footer a:visited {
   line-height: 130%;
   color: #059669;
   text-align: right;
+}
 
 /******* RESPONSIVE ********/
 
@@ -449,5 +450,6 @@ footer a:visited {
   height: 40%;
   margin: 0 auto;
   padding-bottom: 30px;
+}
 }
 
