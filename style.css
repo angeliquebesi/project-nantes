@@ -117,15 +117,15 @@ link {
 }
 
 label {
-  font-family: Inter;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 11px;
-  line-height: 165%;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  color: #6b7280;
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 11px;
+line-height: 165%;
+display: flex;
+align-items: center;
+letter-spacing: -0.02em;
+color: #6B7280;
 }
 
 .primary {
@@ -159,12 +159,13 @@ label {
   opacity: 0.5;
 }
 
-/******** BARRE NAV ********/
+/******** HEADER ********/
+
+/**** BARRE NAV****/
 
 /*** nav container ***/
 nav {
-  border-bottom: solid;
-  border-color: #e5e7eb;
+  border-bottom: solid 2px #e5e7eb;
 }
 .nav-container {
   display: flex;
@@ -220,28 +221,45 @@ nav {
 .menu-btn-burger::after {
   transform: translateY(-5px);
 }
-.classic-btn-container {
+/* partie classic-btn */
+nav .classic-btn-container {
   display: none;
 }
-/******* HERO SECTION ********/
+/******* MAIN SECTION ********/
 
+.main-section {
+  padding: 0 1em;
+}
+
+/**** HERO ****/
 .heroSection {
   min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  border-bottom: solid 2px #e5e7eb;
 }
-
-.heroSection,
-.heroCategory {
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.heroSection h1 span {
+.hero-container h1 span {
   color: #059669;
 }
 
-/******** begin FOOTER desktop ********/
+.hero-text p {
+  padding: 1em 0;
+}
+.hero-img {
+  display: none;
+}
+.hero-container .classic-btn {
+  width: 100%;
+  background-color: #059669;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/******** FOOTER ********/
 footer {
   display: flex;
   justify-content: space-between;
@@ -264,7 +282,7 @@ footer a:visited {
   font-size: 0.75em;
 }
 #footer-center {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap; /* let's wrap this, rows after rows */
   gap: 5px;
   text-align: center;
@@ -320,7 +338,6 @@ footer a:visited {
   padding: 0.5em 0 0.5em 0;
   width: 12em;
 }
-/******** end FOOTER desktop ********/
 
 .h4-category-card {
   font-family: "Inter", sans-serif;
@@ -376,35 +393,13 @@ footer a:visited {
   text-align: right;
 }
 
-.section-about {
-  margin-top: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 500px;
-  width: 100%;
-  background-color: #059669;
-}
-
-.primary-white {
-  background-color: #f9fafb;
-  display: inline-block;
-  max-width: 200px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 24px;
-  padding-right: 24px;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  margin: 0 auto;
-  font-family: Inter;
-  font-weight: 500;
-  color: #059669;
-}
 /******* RESPONSIVE ********/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 500px) {
+
+/******** HEADER ********/
+
+/**** BARRE NAV****/
   .naviguation {
     display: flex;
     padding: 1em;
@@ -425,17 +420,36 @@ footer a:visited {
   .burger-btn {
     display: none;
   }
-  .classic-btn-container {
+  nav .classic-btn-container {
     display: flex;
     padding: 1em;
   }
-  .classic-btn {
-    background-color: #059669;
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 8px;
-    color: #FFFFFF;
-    font-weight: 600;
+
+  /******* MAIN SECTION ********/
+
+  /**** HERO ****/
+  .hero-container {
+    display: -webkit-inline-box;
+  }
+  .hero-text {
+    padding: 0 7em 8em 2em;
+  }
+  .hero-text h1 {
+    padding: 2em 0 0 0;
+    margin: 0;
+  }
+  .hero-text p {
+    margin: 0;
+  }
+  .hero-img {
+    width: 720px;
+    display: flex;
+  }
+  .hero-img img {
+    width: 720px;
+  }
+  .hero-text {
+    width: 50%;
   }
   
   .section-category {
@@ -481,5 +495,33 @@ footer a:visited {
   margin: 0 auto;
   padding-bottom: 30px;
 }
+
+.section-about {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 500px;
+  width: 100%;
+  background-color: #059669;
+}
+
+.primary-white {
+  background-color: #f9fafb;
+  display: inline-block;
+  max-width: 200px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  margin: 0 auto;
+  font-family: Inter;
+  font-weight: 500;
+  color: #059669;
+}
+
 }
 
