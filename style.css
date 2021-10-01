@@ -1,6 +1,4 @@
-/* 
-CSS defaulting global fixes
-*/
+/******** GLOBAL ********/
 
 /* prevents overflow caused by margins/padding & co */
 * {
@@ -222,7 +220,10 @@ nav {
 .menu-btn-burger::after {
   transform: translateY(-5px);
 }
-/*******HERO SECTION********/
+.classic-btn-container {
+  display: none;
+}
+/******* HERO SECTION ********/
 
 .heroSection {
   min-height: 80vh;
@@ -240,49 +241,86 @@ nav {
   color: #059669;
 }
 
-.section-category {
-  justify-items: center;
-  max-width: 100%;
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
-.category-grid-wrapper {
-  max-width: 75%;
-  margin: 50px auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 30px 30px;
-  flex-wrap: wrap;
-}
-
-.card-category {
+/******** begin FOOTER desktop ********/
+footer {
   display: flex;
-  flex-direction: column;
-  background-color: white;
-  min-height: 400px;
-  border: solid 1px #f3f4f6;
-  border-radius: 12px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5em;
+  padding: 2em 0 2em 0;
+  background-color: #F3F4F6;
+  border: 1px solid #E5E7EB;
 }
-
-.card-category-header {
-  width: 100%;
-  height: 40%;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  background-image: url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80");
-  background-size: cover;
-  background-position: center;
+footer a {
+  text-decoration: none;
 }
-
-.card-category-body {
-  width: 85%;
-  height: 40%;
-  margin: 0 auto;
-  padding-bottom: 30px;
+footer a:visited {
+  color: inherit;
 }
+#footer-left {
+  margin-left:4em;
+}
+#footer-left p {
+  font-size: 0.75em;
+}
+#footer-center {
+  display: flex; 
+  flex-wrap: wrap; /* let's wrap this, rows after rows */
+  gap: 5px;
+  text-align: center;
+}
+#footer-center-links {
+  flex: 100%; /* using 100% to center content in all this wrap */
+  margin-bottom: 1em;
+}
+#footer-center-links a {
+  font-family: "Inter", sans-serif;
+  color: #4B5563;
+  font-size: 0.75em;
+  font-weight: 600;
+}
+#footer-center .github-icon  {
+  flex: 100%;
+  font-size: 1.5em;
+}
+#footer-center .github-icon a { /* not sure i'm using the best way to handle image-in-link here */
+  color: transparent;
+  background: url("./github-icon-32px.png") no-repeat;
+  padding: 6px 4px 0px 17px;
+}
+#footer-center .small-text {
+  flex: 100%;
+  color: #9CA3AF;
+  font-size: 0.65em;
+  margin: 0;
+}
+#footer-center .small-link {
+  flex: 100%;
+  color: #9CA3AF;
+  font-size: 0.65em;
+  text-decoration: underline;
+}
+#footer-right {
+  margin-right:4em;
+}
+#footer-right .btn-propose {
+  color: white;
+  background-color: #059669;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5em 0 0.5em 0;
+  width: 12em;
+  margin-bottom: 1em;
+}
+#footer-right .btn-contactus {
+  color: #6b7280;
+  background-color: transparent;
+  border: 1px solid #6b7280;
+  border-radius: 6px;
+  padding: 0.5em 0 0.5em 0;
+  width: 12em;
+}
+/******** end FOOTER desktop ********/
 
 .h4-category-card {
   font-family: "Inter", sans-serif;
@@ -336,8 +374,71 @@ nav {
   line-height: 130%;
   color: #059669;
   text-align: right;
+
+/******* RESPONSIVE ********/
+
+@media screen and (min-width: 768px) {
+  .naviguation {
+    display: flex;
+    padding: 1em;
+  }
+  .naviguation a {
+    text-decoration: none;
+    margin: auto;
+    margin-right: 1em;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4b5563;
+    font-family: "Inter", sans-serif;
+  }
+  .naviguation a span {
+    color: #059669;
+    margin-right: 0;
+  }
+  .burger-btn {
+    display: none;
+  }
+  .classic-btn-container {
+    display: flex;
+    padding: 1em;
+  }
+  .classic-btn {
+    background-color: #059669;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    color: #FFFFFF;
+    font-weight: 600;
+  }
+  
+  .section-category {
+  justify-items: center;
+  max-width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
+.category-grid-wrapper {
+  max-width: 75%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px 30px;
+  flex-wrap: wrap;
+}
+
+.card-category {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  min-height: 400px;
+  border: solid 1px #f3f4f6;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+<<<<<<< HEAD
 .section-about {
   margin-top: 150px;
   display: flex;
@@ -364,3 +465,22 @@ nav {
   font-weight: 500;
   color: #059669;
 }
+=======
+.card-category-header {
+  width: 100%;
+  height: 40%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-image: url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1974&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.card-category-body {
+  width: 85%;
+  height: 40%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+>>>>>>> 99bb6a3b02e3f9ff8f8f2fc20fb12b3061688527
