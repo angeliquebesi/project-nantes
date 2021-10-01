@@ -103,7 +103,7 @@ letter-spacing: -0.02em;
 color: #6B7280;
 }
 
-button .primary {
+.primary {
   color: white;
   background-color: #059669;
   border: none;
@@ -113,7 +113,7 @@ button .primary {
   margin-bottom: 1em;
 }
 
-button .secondary {
+.secondary {
   color: #6b7280;
   background-color: transparent;
   border: 1px solid #6b7280;
@@ -134,12 +134,13 @@ button .secondary {
   opacity: 0.5;
 }
 
-/******** BARRE NAV ********/
+/******** HEADER ********/
+
+/**** BARRE NAV****/
 
 /*** nav container ***/
 nav {
-  border-bottom: solid;
-  border-color: #e5e7eb;
+  border-bottom: solid 2px #e5e7eb;
 }
 .nav-container {
   display: flex;
@@ -195,27 +196,44 @@ nav {
 .menu-btn-burger::after {
   transform: translateY(-5px);
 }
-.classic-btn-container {
+/* partie classic-btn */
+nav .classic-btn-container {
   display: none;
 }
-/******* HERO SECTION ********/
+/******* MAIN SECTION ********/
 
-.heroSection {
+.main-section {
+  padding: 0 1em;
+}
+/**** HERO ****/
+.hero-container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
 
-.heroSection,
-.heroCategory {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: solid 2px #e5e7eb;
 }
-
-.heroSection h1 span {
+.hero-container h1 span {
   color: #059669;
 }
 
-/******** begin FOOTER desktop ********/
+.hero-text p {
+  padding: 1em 0;
+}
+.hero-img {
+  display: none;
+}
+.hero-container .classic-btn {
+  width: 100%;
+  background-color: #059669;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+/******** FOOTER ********/
 footer {
   display: flex;
   justify-content: space-between;
@@ -238,7 +256,7 @@ footer a:visited {
   font-size: 0.75em;
 }
 #footer-center {
-  display: flex; 
+  display: flex;
   flex-wrap: wrap; /* let's wrap this, rows after rows */
   gap: 5px;
   text-align: center;
@@ -294,12 +312,16 @@ footer a:visited {
   padding: 0.5em 0 0.5em 0;
   width: 12em;
 }
-/******** end FOOTER desktop ********/
 
 
-/******* RESPONSIVE ********/
+/************ RESPONSIVE *************/
 
 @media screen and (min-width: 500px) {
+
+/******** HEADER ********/
+
+/**** BARRE NAV****/
+
   .naviguation {
     display: flex;
     padding: 1em;
@@ -320,16 +342,35 @@ footer a:visited {
   .burger-btn {
     display: none;
   }
-  .classic-btn-container {
+  nav .classic-btn-container {
     display: flex;
     padding: 1em;
   }
-  .classic-btn {
-    background-color: #059669;
-    border: none;
-    padding: 0.5em 1em;
-    border-radius: 8px;
-    color: #FFFFFF;
-    font-weight: 600;
+
+  /******* MAIN SECTION ********/
+
+  /**** HERO ****/
+  .hero-container {
+    display: -webkit-inline-box;
+  }
+  .hero-text {
+    padding: 0 7em 8em 2em;
+  }
+  .hero-text h1 {
+    padding: 2em 0 0 0;
+    margin: 0;
+  }
+  .hero-text p {
+    margin: 0;
+  }
+  .hero-img {
+    width: 720px;
+    display: flex;
+  }
+  .hero-img img {
+    width: 720px;
+  }
+  .hero-text {
+    width: 50%;
   }
 }
