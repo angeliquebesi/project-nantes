@@ -124,7 +124,7 @@ label {
   color: #6b7280;
 }
 
-button .primary {
+.primary {
   color: white;
   background-color: #059669;
   border: none;
@@ -134,7 +134,7 @@ button .primary {
   margin-bottom: 1em;
 }
 
-button .secondary {
+.secondary {
   color: #6b7280;
   background-color: transparent;
   border: 1px solid #6b7280;
