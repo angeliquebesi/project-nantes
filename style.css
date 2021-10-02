@@ -139,6 +139,11 @@ label {
   font-weight: 600;
 }
 
+.primary a {
+  text-decoration: none;
+  color: #f9fafb;
+}
+
 .secondary {
   color: #6b7280;
   background-color: transparent;
@@ -390,7 +395,6 @@ footer a:visited {
 }
 
 /*********************** RESPONSIVE ************************/
-
 @media screen and (min-width: 726px) {
   /******** HEADER ********/
 
@@ -428,10 +432,7 @@ footer a:visited {
     text-decoration: none;
     color: #f9fafb;
   }
-  nav .primary a {
-    text-decoration: none;
-    color: #f9fafb;
-  }
+  
 
   /******* MAIN SECTION ********/
 
