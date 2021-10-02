@@ -133,9 +133,10 @@ label {
   background-color: #059669;
   border: none;
   border-radius: 6px;
-  padding: 0.5em 0 0.5em 0;
+  padding: 1em 0;
   width: 200px;
   margin-bottom: 1em;
+  font-weight: 600;
 }
 
 .secondary {
@@ -231,32 +232,26 @@ nav .classic-btn-container {
   padding: 0 1em;
 }
 
-/**** HERO ****/
-.heroSection {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+/**** HERO - INDEX ****/
+
+.hero-container {
   border-bottom: solid 2px #e5e7eb;
+  padding-bottom: 5em;
 }
 .hero-container h1 span {
   color: #059669;
 }
-
+.hero-text{
+padding: 0 1em;
+}
 .hero-text p {
   padding: 1em 0;
 }
+.hero-text button {
+  width: 100%;
+}
 .hero-img {
   display: none;
-}
-.hero-container .classic-btn {
-  width: 100%;
-  background-color: #059669;
-  border: none;
-  padding: 0.5em 1em;
-  border-radius: 8px;
-  color: #ffffff;
-  font-weight: 600;
 }
 
 /******** FOOTER ********/
@@ -394,7 +389,7 @@ footer a:visited {
   text-align: right;
 }
 
-/******* RESPONSIVE ********/
+/*********************** RESPONSIVE ************************/
 
 @media screen and (min-width: 726px) {
   /******** HEADER ********/
@@ -427,12 +422,18 @@ footer a:visited {
 
   /******* MAIN SECTION ********/
 
-  /**** HERO ****/
+  /**** HERO - INDEX ****/
   .hero-container {
     display: -webkit-inline-box;
+    padding-bottom: 0;
   }
   .hero-text {
     padding: 0 7em 8em 2em;
+    width: 50%;
+    /* min-width: 550px; */
+  }
+  .hero-text button {
+    width: 200px;
   }
   .hero-text h1 {
     padding: 2em 0 0 0;
@@ -440,18 +441,17 @@ footer a:visited {
   }
   .hero-text p {
     margin: 0;
+    padding-right: 6em;
   }
   .hero-img {
-    width: 720px;
     display: flex;
   }
   .hero-img img {
-    width:  720px;
-  }
-  .hero-text {
-    width: 50%;
+    width:  50%;
+    min-width: 600px;
   }
 
+/**** CATEGORY - INDEX ****/
   .section-category {
     justify-items: center;
     max-width: 100%;
