@@ -46,43 +46,48 @@
     </header>
     <!-- Créer le formulaire-->
     <div class="form-container">
-      <h1>Pour nous contacter</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
-      </p>
-      <div class="">
+      <div class="text-part">
+        <h1>Nous contacter</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="form-part">
         <form>
-          <label for="first-&-last-name">Nom & prénom :</label>
+          <label for="first-&-last-name">Prénom & Nom :</label>
           <input
             type="text"
             id="first-&-last-name"
             name="first-&-last-name"
-            value="Jean Heude"
+            placeholder="Jean Heude"
           />
-          <br />
-          <br />
+
           <label id="email">Adresse E-mail :</label>
           <input
             type="text"
             id="email"
             name="email"
-            value="JeanHeude@gmail.com"
-          /><br />
-          <br />
+            placeholder="JeanHeude@gmail.com"
+          />
+
           <label for="object">Objet :</label>
           <input
             type="text"
             id="object"
             name="object"
-            value="Retour/avis sur un lieux"
+            placeholder="Retour/avis sur un lieux"
           />
-          <br />
-          <br />
+
           <label for="message">Message :</label>
           <textarea id="message" name="message"></textarea>
-          <br /><br />
-          <input id="submit" type="submit" value="Envoyer" />
+
+          <input
+            id="submit"
+            type="submit"
+            placeholder="Envoyer"
+            class="primary"
+          />
         </form>
       </div>
     </div>

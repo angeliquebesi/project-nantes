@@ -119,13 +119,13 @@ link {
 label {
   font-family: Inter;
   font-style: normal;
-  font-weight: bold;
   font-size: 11px;
   line-height: 165%;
   display: flex;
   align-items: center;
   letter-spacing: -0.02em;
   color: #6b7280;
+  margin-top: 1.5em;
 }
 
 .primary {
@@ -394,6 +394,33 @@ footer a:visited {
   text-align: right;
 }
 
+/******** FORM PAGE ********/
+.form-container {
+  padding: 2em
+}
+.text-part {
+  padding-bottom: 2em;
+}
+.text-part h1, p {
+  margin: 0;
+}
+.form-part {
+  padding: 0 1em;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 0.1em;
+  border-radius: 5px;
+  border: solid 1px #9ca3af;
+  padding:0.4em 0.5em;
+}
+textarea{
+  height: 100px;
+  margin-bottom: 0.8em;
+}
+
 /*********************** RESPONSIVE ************************/
 @media screen and (min-width: 726px) {
   /******** HEADER ********/
@@ -432,7 +459,6 @@ footer a:visited {
     text-decoration: none;
     color: #f9fafb;
   }
-  
 
   /******* MAIN SECTION ********/
 
@@ -535,5 +561,12 @@ footer a:visited {
     font-family: Inter;
     font-weight: 500;
     color: #059669;
+  }
+  /******** FORM PAGE ********/
+  form {
+    padding: 0 7em;
+  }
+  input {
+    margin-top: 0.1em;
   }
 }
