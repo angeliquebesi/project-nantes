@@ -222,8 +222,8 @@ nav {
 .menu-btn-burger::after {
   transform: translateY(-5px);
 }
-/* partie classic-btn */
-nav .classic-btn-container {
+/* partie .primary-btn */
+nav .primary-btn-container {
   display: none;
 }
 /******* MAIN SECTION ********/
@@ -241,8 +241,8 @@ nav .classic-btn-container {
 .hero-container h1 span {
   color: #059669;
 }
-.hero-text{
-padding: 0 1em;
+.hero-text {
+  padding: 0 1em;
 }
 .hero-text p {
   padding: 1em 0;
@@ -395,8 +395,11 @@ footer a:visited {
   /******** HEADER ********/
 
   /**** BARRE NAV****/
+  nav {
+    padding: 0.5em 0;
+  }
   .navigation {
-    display: none;
+    display: flex;
     padding: 1em;
   }
   .navigation a {
@@ -415,9 +418,19 @@ footer a:visited {
   .burger-btn {
     display: none;
   }
-  nav .classic-btn-container {
+  nav .primary-btn-container {
     display: flex;
     padding: 1em;
+  }
+  nav .primary {
+    padding: 0.5em 0;
+    margin: 0;
+    text-decoration: none;
+    color: #f9fafb;
+  }
+  nav .primary a {
+    text-decoration: none;
+    color: #f9fafb;
   }
 
   /******* MAIN SECTION ********/
@@ -432,7 +445,7 @@ footer a:visited {
     width: 50%;
     /* min-width: 550px; */
   }
-  .hero-text button {
+  .hero-text .primary {
     width: 200px;
   }
   .hero-text h1 {
@@ -447,11 +460,11 @@ footer a:visited {
     display: flex;
   }
   .hero-img img {
-    width:  50%;
+    width: 50%;
     min-width: 600px;
   }
 
-/**** CATEGORY - INDEX ****/
+  /**** CATEGORY - INDEX ****/
   .section-category {
     justify-items: center;
     max-width: 100%;
