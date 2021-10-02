@@ -153,6 +153,9 @@ label {
 }
 
 /* partie logo */
+.logo-container {
+  align-self: center;
+}
 .logo {
   color: #059669;
   font-style: italic;
@@ -177,7 +180,7 @@ nav {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding: 0 1em;
+  padding: 1em;
 }
 
 /* partie navigation */
@@ -426,8 +429,8 @@ textarea{
   /******** HEADER ********/
 
   /**** BARRE NAV****/
-  nav {
-    padding: 0.5em 0;
+  .nav-container {
+    padding: 0.5em 1em;
   }
   .navigation {
     display: flex;
