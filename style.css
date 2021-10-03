@@ -160,6 +160,7 @@ label {
   color: #059669;
   font-style: italic;
   font-size: 17px;
+  padding: 0.7em 0 0 0.3em;
 }
 .logo em {
   font-weight: bolder;
@@ -182,7 +183,12 @@ nav {
   justify-content: space-between;
   padding: 1em;
 }
-
+.logo-container {
+  display: flex;
+}
+.logo-container img {
+  width: 40px;
+}
 /* partie navigation */
 .navigation {
   display: none;
@@ -436,6 +442,12 @@ form #submit {
   /**** BARRE NAV****/
   .nav-container {
     padding: 0.5em 1em;
+  }
+  .logo-container {
+    display: inline-flex;
+  }
+  .logo-container img {
+    width: 50px;
   }
   .navigation {
     display: flex;
