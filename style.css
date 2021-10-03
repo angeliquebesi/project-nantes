@@ -469,7 +469,7 @@ textarea {
 
   /**** HERO - INDEX ****/
   .hero-container {
-    display: -webkit-inline-box;
+    display: flex;
     padding-bottom: 0;
     width: 100%;
   }
