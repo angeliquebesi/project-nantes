@@ -424,6 +424,9 @@ textarea {
   height: 100px;
   margin-bottom: 0.8em;
 }
+form #submit {
+  width: 100%;
+}
 
 /*********************** RESPONSIVE ************************/
 
@@ -567,10 +570,17 @@ textarea {
     color: #059669;
   }
   /******** FORM PAGE ********/
-  form {
-    padding: 0 7em;
+
+  .form-container {
+    padding: 2em 15em;
   }
-  input {
-    margin-top: 0.1em;
+  .form-container .text-part {
+    text-align: center;
+  }
+  .form-container .form-part {
+    padding: 3em 10em;
+  }
+  textarea {
+    height: 150px;
   }
 }
