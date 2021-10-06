@@ -668,9 +668,8 @@ form #submit {
     color: #4b5563;
     font-family: "Inter", sans-serif;
   }
-  .navigation a span {
+  .navigation a:hover {
     color: #059669;
-    margin-right: 0;
   }
 
   .burger-btn {
@@ -970,5 +969,5 @@ form #submit {
     font-size: 0.65em;
     text-decoration: underline;
   }
+}
   /******** end FOOTER desktop ********/
-
