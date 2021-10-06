@@ -583,7 +583,9 @@ form #submit {
     display: flex;
     padding-bottom: 0;
     width: 100%;
+    min-height : 80vh;
   }
+  
   .hero-text {
     padding: 0 7em 8em 2em;
     width: 50%;
@@ -602,10 +604,6 @@ form #submit {
   .hero-img {
     width: 100%;
     display: flex;
-  }
-  .hero-img {
-    display: flex;
-    width: 50%;
     background-image: url("./img/dragon.jpg");
     background-size: cover;
   }
