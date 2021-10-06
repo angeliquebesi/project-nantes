@@ -697,6 +697,7 @@ form #submit {
   .hero-text {
     padding: 0 7em 8em 2em;
     width: 50%;
+    min-width: 50%;
   }
   .hero-text .primary {
     width: 200px;
@@ -714,6 +715,7 @@ form #submit {
     display: flex;
     background-image: url("./img/dragon.jpg");
     background-size: cover;
+    min-width: 50%;
   }
 
   /**** CATEGORY - INDEX ****/
@@ -989,8 +991,6 @@ footer a:visited {
   padding-left:1.1em;
   padding-right:1.1em;
   font-size: 0.65em;
-}
-#footer-step3-links .green-link {
 }
 #footer-step3 a.github-icon {
   background: url("./github-icon-32px.png") no-repeat center;
