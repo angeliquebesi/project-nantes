@@ -257,6 +257,9 @@ nav .primary-btn-container {
 }
 .hero-text {
   padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .hero-text p {
   padding: 1em 0;
@@ -303,8 +306,8 @@ footer {
   justify-content: center;
   grid-template-columns: 20em;
   gap: 10px;
-  background-color: #F3F4F6;
-  border: 1px solid #E5E7EB;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
 }
 footer a {
   text-decoration: none;
@@ -323,10 +326,10 @@ footer a:visited {
 }
 #footer-step1 .logo-container {
   font-size: 2.2em;
-  margin:0;
+  margin: 0;
 }
 #footer-step1 .logo-container .logo {
-  margin:0;
+  margin: 0;
 }
 #footer-step1 p {
   font-size: 0.84em;
@@ -382,16 +385,16 @@ footer a:visited {
   grid-row-start: 4;
   grid-row-end: 5;
   text-align: center;
-  margin-bottom:3em;
+  margin-bottom: 3em;
 }
 
 #footer-bottom .copyright {
-  color: #9CA3AF;
+  color: #9ca3af;
   font-size: 0.75em;
   margin-bottom: 0.5em;
 }
 #footer-bottom .copyright-link {
-  color: #9CA3AF;
+  color: #9ca3af;
   font-size: 0.65em;
   text-decoration: underline;
   font-family: "Inter", sans-serif;
@@ -691,19 +694,22 @@ form #submit {
     display: flex;
     padding-bottom: 0;
     width: 100%;
-    min-height : 80vh;
+    min-height: 80vh;
   }
-  
+
   .hero-text {
-    padding: 0 7em 8em 2em;
+    padding: 0 3em;
     width: 50%;
     min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .hero-text .primary {
     width: 200px;
   }
   .hero-text h1 {
-    padding: 2em 0 0 0;
+    padding: 0;
     margin: 0;
   }
   .hero-text p {
@@ -726,7 +732,7 @@ form #submit {
     padding-right: 60px;
   }
 
- /**********Card category**********/
+  /**********Card category**********/
 
   .category-grid-wrapper {
     max-width: 1200px;
@@ -737,7 +743,6 @@ form #submit {
     gap: 5px 15px;
     flex-wrap: wrap;
   }
-
 
   .card-category {
     display: flex;
@@ -849,9 +854,7 @@ form #submit {
   }
   textarea {
     height: 150px;
-
   }
-
 
   .people-wrapper {
     display: flex;
@@ -865,39 +868,37 @@ form #submit {
 
   /******** FORM PAGE ********/
 
+  /**********Card lieu**********/
 
-/**********Card lieu**********/
+  .place1 {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 0fr);
+    gap: 30px 30px;
+    flex-wrap: wrap;
+  }
 
-.place1 {
-  max-width: 1200px;
-  margin: 50px auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 0fr);
-  gap: 30px 30px;
-  flex-wrap: wrap;
-}
+  .picturesPlace-container {
+    grid-area: 1 / 1 / 4 / 2;
+    margin: 0;
+    padding: 0;
+  }
 
-.picturesPlace-container {
-  grid-area: 1 / 1 / 4 / 2;
-  margin: 0;
-  padding: 0;
-}
+  .infoUtile {
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15%;
+    gap: 50px;
+  }
 
-.infoUtile {
-  display : inline-flex;
-  margin :0;
-  padding: 0;
-  padding-bottom: 15%;
-  gap : 50px;
-}
-
-.placeName {
-  margin : 0;
-  padding : 0;
-  padding-top: 10%;
-}
-
+  .placeName {
+    margin: 0;
+    padding: 0;
+    padding-top: 10%;
+  }
 
   .form-container {
     padding: 2em 15em;
@@ -912,112 +913,105 @@ form #submit {
     height: 150px;
   }
 
-/******** begin FOOTER desktop ********/
-footer {
-  display: grid;
-  grid-template-columns: 18em auto auto;
-  justify-content: space-between;
-  gap: 1em;
-  background-color: #F3F4F6;
-  border: 1px solid #E5E7EB;
-  padding-top: 3.7em;
+  /******** begin FOOTER desktop ********/
+  footer {
+    display: grid;
+    grid-template-columns: 18em auto auto;
+    justify-content: space-between;
+    gap: 1em;
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    padding-top: 3.7em;
+  }
+  footer a {
+    text-decoration: none;
+  }
+  footer a:visited {
+    color: inherit;
+  }
+  #footer-step1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 0em;
+    margin-left: 3em;
+    margin-top: 0;
+  }
+  #footer-step1 .logo-container {
+    font-size: 1.65em;
+    margin: 0;
+  }
+  #footer-step1 span {
+    font-weight: bold;
+  }
+  #footer-step1 .logo-container .logo {
+    margin: 0;
+  }
+  #footer-step1 p {
+    font-size: 0.8em;
+    padding: 0em;
+    margin-top: 0.8em;
+    line-height: 1.2em;
+    width: 19em;
+  }
+  #footer-step2 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 0em;
+    margin: 0;
+    margin-right: 3em;
+    margin-top: 0;
+  }
+  #footer-step2 button {
+    width: 12em;
+    padding: 0.6em;
+    font-size: 1em;
+    margin-bottom: 0.6em;
+  }
+  #footer-step3 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: center;
+    margin-top: 0;
+  }
+  #footer-step3-links {
+    font-size: 1.7em;
+  }
+  #footer-step3-links a {
+    display: inline-block;
+    padding-left: 1.1em;
+    padding-right: 1.1em;
+    font-size: 0.65em;
+  }
+  #footer-step3 a.github-icon {
+    background: url("./github-icon-32px.png") no-repeat center;
+    font-size: 1.3em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  #footer-bottom {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  #footer-bottom .copyright {
+    font-size: 0.65em;
+    margin-bottom: 0.5em;
+    margin-top: 0em;
+  }
+  #footer-bottom .copyright-link {
+    font-family: "Inter", sans-serif;
+    color: #9ca3af;
+    font-size: 0.65em;
+    text-decoration: underline;
+  }
+  /******** end FOOTER desktop ********/
 }
-footer a {
-  text-decoration: none;
-}
-footer a:visited {
-  color: inherit;
-}
-#footer-step1 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  padding: 0em;
-  margin-left: 3em;
-  margin-top: 0;
-}
-#footer-step1 .logo-container {
-  font-size: 1.65em;
-  margin:0;
-
-}
-#footer-step1 span {
-  font-weight: bold;
-
-}
-#footer-step1 .logo-container .logo {
-  margin:0;
-}
-#footer-step1 p {
-  font-size: 0.8em;
-  padding: 0em;
-  margin-top: 0.8em;
-  line-height: 1.2em;
-  width: 19em;
-}
-#footer-step2 {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  padding: 0em;
-  margin:0;
-  margin-right: 3em;
-  margin-top: 0;
- 
-}
-#footer-step2 button {
-  width: 12em;
-  padding: 0.6em;
-  font-size: 1em;
-  margin-bottom: 0.6em;
-}
-#footer-step3 {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  text-align: center;
-  margin-top: 0;
-
-}
-#footer-step3-links {
-  font-size: 1.7em;
-
-}
-#footer-step3-links a {
-  display: inline-block;
-  padding-left:1.1em;
-  padding-right:1.1em;
-  font-size: 0.65em;
-}
-#footer-step3 a.github-icon {
-  background: url("./github-icon-32px.png") no-repeat center;
-  font-size: 1.3em;
-  margin-top: 0em;
-  margin-bottom: 0em;
-}
-#footer-bottom {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
-  text-align: center;
-  margin-bottom:1em;
-}
-#footer-bottom .copyright {
-  font-size: 0.65em;
-  margin-bottom: 0.5em;
-  margin-top:0em;
-}
-#footer-bottom .copyright-link {
-  font-family: "Inter", sans-serif;
-  color: #9CA3AF;
-  font-size: 0.65em;
-  text-decoration: underline;
-}
-/******** end FOOTER desktop ********/
-
-}
-
