@@ -668,9 +668,8 @@ form #submit {
     color: #4b5563;
     font-family: "Inter", sans-serif;
   }
-  .navigation a span {
+  .navigation a:hover {
     color: #059669;
-    margin-right: 0;
   }
 
   .burger-btn {
