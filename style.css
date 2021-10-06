@@ -896,6 +896,7 @@ form #submit {
     font-size: 1.65em;
     margin: 0;
   }
+  
   #footer-step1 span {
     font-weight: bold;
   }
@@ -968,4 +969,4 @@ form #submit {
     text-decoration: underline;
   }
   /******** end FOOTER desktop ********/
-}
+
