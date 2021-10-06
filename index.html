@@ -1,157 +1,204 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nantes(autrement)</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-  
-<body>
-  <header>
-    <nav>
-      <div class="nav-container">
-         <!-- logo -->
-        <div class="logo-container">
-          <p class="logo"><em>Nantes</em><span>(autrement)</span></p>
-        </div>
-        <!-- navigation vers les autres pages -->
-        <div class="navigation">
-          <!-- ajouter les bons liens par la suite  -->
-          <a href="categorie">catégorie</a>
-          <a href="Tous les lieux">Tous les lieux</a>
-          <a href="A propos"> <span>A propos</span></a>
-        </div>
-        <div class="burger-btn">
-          <div class="menu-btn">
-            <div class="menu-btn-burger"></div>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="nav-container">
+          <!-- logo -->
+          <div class="logo-container">
+            <img src="./img/logo.jpg" alt="">
+            <p class="logo"><em>Nantes</em><span>(autrement)</span></p>
+          </div>
+          <!-- navigation vers les autres pages -->
+          <div class="navigation">
+            <!-- ajouter liens " tous les lieux" -->
+            <a href="Category.html">Catégories</a>
+            <a href="Tous les lieux">Tous les lieux</a>
+            <a href="A propos"> <span>A propos</span></a>
+          </div>
+          <!-- boutton -->
+          <div class="burger-btn">
+            <div class="menu-btn">
+              <div class="menu-btn-burger"></div>
+            </div>
+          </div>
+          <div class="primary-btn-container">
+            <button class="primary">
+              <a href="FormsContact.html">Proposer un lieu</a>
+            </button>
           </div>
         </div>
-        <div class="classic-btn-container">
-          <button class ="primary">Proposer un lieu</button>
+      </nav>
+    </header>
+
+    <div class="hero-container">
+      <!-- partie texte -->
+      <div class="hero-text">
+        <h1>
+          Découvrez les spots les plus cools de Nantes <span>(autrement)</span>.
+        </h1>
+        <p>
+          Nous répertorions les spots nantais qui valent le détour, vous êtes
+          invités à participer !
+        </p>
+        <div class="primary-btn-container">
+          <button class="primary">
+            <a href="FormsContact.html">Proposer un lieu</a>
+          </button>
         </div>
       </div>
-    </nav>
-  </header>
+      <!-- partie image -->
+      <div class="hero-img"></div>
+    </div>
 
-  <div class="main-section">
-    <div class = "hero-container">
-      <div class = "hero-text">
-        <h1> Découvrez les spots les plus cools de Nantes <span>(autrement)</span>. </h1>
-        <p>Nous répertorions les spots nantais qui valent le détour, vous êtes invités à participer !</p>
-        <div class="classic-btn-container">
-          <button class ="primary">Proposer un lieu</button>
+    <div class="section-category">
+      <h1 class="text-center text-max-w-800 margin-auto-center padding-top-80">
+        Selon différentes catégories
+      </h1>
+      <h2 class="text-center text-max-w-500 margin-auto-center">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+        error maiores eligendi quos explicabo accusantium?
+      </h2>
+      <div class="category-grid-wrapper">
+        <div class="card-category">
+          <div class="card-category-header"></div>
+          <div class="card-category-body">
+            <p class="h4-category-card">Restaurant</p>
+            <p class="para-category-card">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Suscipit, optio error consequatur ea molestiae molestias fugiat
+              obcaecati recusandae voluptatem nulla!
+            </p>
+          </div>
+          <div class="card-category-bottom">
+            <p class="mini-label-category">3 spots</p>
+            <p class="link-category-card">Découvrir ↗︎</p>
+          </div>
+        </div>
+        <div class="card-category">
+          <div class="card-category-header"></div>
+          <div class="card-category-body">
+            <p class="h4-category-card">Restaurant</p>
+            <p class="para-category-card">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Suscipit, optio error consequatur ea molestiae molestias fugiat
+              obcaecati recusandae voluptatem nulla!
+            </p>
+          </div>
+          <div class="card-category-bottom">
+            <p class="mini-label-category">3 spots</p>
+            <p class="link-category-card">Découvrir ↗︎</p>
+          </div>
+        </div>
+        <div class="card-category">
+          <div class="card-category-header"></div>
+          <div class="card-category-body">
+            <p class="h4-category-card">Restaurant</p>
+            <p class="para-category-card">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Suscipit, optio error consequatur ea molestiae molestias fugiat
+              obcaecati recusandae voluptatem nulla!
+            </p>
+          </div>
+          <div class="card-category-bottom">
+            <p class="mini-label-category">3 spots</p>
+            <p class="link-category-card">Découvrir ↗︎</p>
+          </div>
+        </div>
+        <div class="card-category">
+          <div class="card-category-header"></div>
+          <div class="card-category-body">
+            <p class="h4-category-card">Restaurant</p>
+            <p class="para-category-card">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Suscipit, optio error consequatur ea molestiae molestias fugiat
+              obcaecati recusandae voluptatem nulla!
+            </p>
+          </div>
+          <div class="card-category-bottom">
+            <p class="mini-label-category">3 spots</p>
+            <p class="link-category-card">Découvrir ↗︎</p>
+          </div>
+        </div>
+        <div class="card-category">
+          <div class="card-category-header"></div>
+          <div class="card-category-body">
+            <p class="h4-category-card">Restaurant</p>
+            <p class="para-category-card">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Suscipit, optio error consequatur ea molestiae molestias fugiat
+              obcaecati recusandae voluptatem nulla!
+            </p>
+          </div>
+          <div class="card-category-bottom">
+            <p class="mini-label-category">3 spots</p>
+            <p class="link-category-card">Découvrir ↗︎</p>
+          </div>
+        </div>
+        <div class="card-category">
+          <div class="card-category-header"></div>
+          <div class="card-category-body">
+            <p class="h4-category-card">Restaurant</p>
+            <p class="para-category-card">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Suscipit, optio error consequatur ea molestiae molestias fugiat
+              obcaecati recusandae voluptatem nulla!
+            </p>
+          </div>
+          <div class="card-category-bottom">
+            <p class="mini-label-category">3 spots</p>
+            <p class="link-category-card">Découvrir ↗︎</p>
+          </div>
         </div>
       </div>
-      <div class="hero-img">
-          <img src="./img/dragon.jpg" alt="">
-      </div>
-    </div>
-  </div>
-
-  
-<div class="section-category">
-  <h1 class="text-center text-max-w-800 margin-auto-center padding-top-80">Selon différentes catégories</h1>
-  <h2 class="text-center text-max-w-500 margin-auto-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, error maiores eligendi quos explicabo accusantium?</h2>
-  <div class="category-grid-wrapper">
-    <div class="card-category">
-      <div class="card-category-header"></div>
-      <div class="card-category-body">
-        <p class="h4-category-card">Restaurant</p>
-        <p class="para-category-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, optio error consequatur ea molestiae molestias fugiat obcaecati recusandae voluptatem nulla!</p>
-      </div>
-      <div class="card-category-bottom">
-        <p class="mini-label-category">3 spots</p>
-        <p class="link-category-card">Découvrir ↗︎</p>
-      </div>
-    </div>
-    <div class="card-category">
-      <div class="card-category-header"></div>
-      <div class="card-category-body">
-        <p class="h4-category-card">Restaurant</p>
-        <p class="para-category-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, optio error consequatur ea molestiae molestias fugiat obcaecati recusandae voluptatem nulla!</p>
-      </div>
-      <div class="card-category-bottom">
-        <p class="mini-label-category">3 spots</p>
-        <p class="link-category-card">Découvrir ↗︎</p>
-      </div>
-    </div>
-    <div class="card-category">
-      <div class="card-category-header"></div>
-      <div class="card-category-body">
-        <p class="h4-category-card">Restaurant</p>
-        <p class="para-category-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, optio error consequatur ea molestiae molestias fugiat obcaecati recusandae voluptatem nulla!</p>
-      </div>
-      <div class="card-category-bottom">
-        <p class="mini-label-category">3 spots</p>
-        <p class="link-category-card">Découvrir ↗︎</p>
-      </div>
-    </div>
-    <div class="card-category">
-      <div class="card-category-header"></div>
-      <div class="card-category-body">
-        <p class="h4-category-card">Restaurant</p>
-        <p class="para-category-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, optio error consequatur ea molestiae molestias fugiat obcaecati recusandae voluptatem nulla!</p>
-      </div>
-      <div class="card-category-bottom">
-        <p class="mini-label-category">3 spots</p>
-        <p class="link-category-card">Découvrir ↗︎</p>
-      </div>
-    </div>
-    <div class="card-category">
-      <div class="card-category-header"></div>
-      <div class="card-category-body">
-        <p class="h4-category-card">Restaurant</p>
-        <p class="para-category-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, optio error consequatur ea molestiae molestias fugiat obcaecati recusandae voluptatem nulla!</p>
-      </div>
-      <div class="card-category-bottom">
-        <p class="mini-label-category">3 spots</p>
-        <p class="link-category-card">Découvrir ↗︎</p>
-      </div>
-    </div>
-    <div class="card-category">
-      <div class="card-category-header"></div>
-      <div class="card-category-body">
-        <p class="h4-category-card">Restaurant</p>
-        <p class="para-category-card">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, optio error consequatur ea molestiae molestias fugiat obcaecati recusandae voluptatem nulla!</p>
-      </div>
-      <div class="card-category-bottom">
-        <p class="mini-label-category">3 spots</p>
-        <p class="link-category-card">Découvrir ↗︎</p>
-      </div>
     </div>
 
-    
-  </div>
-</div>
 
-<div class="section-about">
-  <h1 class="text-center text-max-w-800 margin-auto-center text-white">Rejoignez-nous !</h1>
-  <h2 class="text-center text-max-w-500 margin-auto-center text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, error maiores eligendi quos explicabo accusantium?</h2>
-<button class="primary-white">Proposer un lieu</button>
+    <div class="section-about">
+      <h1 class="text-center text-max-w-800 margin-auto-center text-white">
+        Rejoignez-nous !
+      </h1>
+      <h2 class="text-center text-max-w-500 margin-auto-center text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+        error maiores eligendi quos explicabo accusantium?
+      </h2>
+      <button class="primary-white">Proposer un lieu</button>
 
-</div>
-
-<div id="footer-center">
-    <div id="footer-center-links">
-      <a href="#">Catégories</a>
-      <a href="#">Tous les lieux</a>
-      <a href="#">A propos</a>
     </div>
-    <div class="github-icon"><a href="#">a</a></div>
-    <p class="small-text">© 2021 NantesAutrement. All rights reserved.</p>
-    <a class="small-link" href="">Mentions légales</a>
-  </div>
+    <footer>
+      <div id="footer-center">
+        <div id="footer-center-links">
+          <a href="#">Catégories</a>
+          <a href="#">Tous les lieux</a>
+          <a href="#">A propos</a>
+        </div>
+        <div class="github-icon"><a href="#">a</a></div>
+        <p class="small-text">© 2021 NantesAutrement. All rights reserved.</p>
+        <a class="small-link" href="">Mentions légales</a>
+      </div>
 
-  <div id="footer-right">
-    <button class="btn-propose">Proposer un lieu</button>
-    <button class="btn-contactus">Nous contacter</button>
-  </div>
-</footer>
+      <div id="footer-right">
+        <button class="btn-propose">Proposer un lieu</button>
+        <button class="btn-contactus">Nous contacter</button>
+      </div>
+    </footer>
   </body>
 </html>
