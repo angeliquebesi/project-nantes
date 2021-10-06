@@ -810,51 +810,20 @@ form #submit {
     color: #059669;
   }
   /******** FORM PAGE ********/
-
-  /**********Card lieu**********/
-
-  .place1 {
-    max-width: 1200px;
-    margin: 50px auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 0fr);
-    gap: 30px 30px;
-    flex-wrap: wrap;
-  }
-
-  .picturesPlace-container {
-    grid-area: 1 / 1 / 4 / 2;
-    margin: 0;
-    padding: 0;
-  }
-
-  .infoUtile {
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 15%;
-    gap: 50px;
-  }
-
-  .placeName {
-    margin: 0;
-    padding: 0;
-    padding-top: 10%;
-  }
-
-  .form-container {
-    padding: 2em 15em;
-  }
+  
   .form-container .text-part {
     text-align: center;
   }
   .form-container .form-part {
-    padding: 3em 10em;
+    padding: 0;
+    max-width: 500px;
+    margin: auto;
   }
   textarea {
     height: 150px;
   }
+
+   /******** ABOUT PAGE ********/
 
   .people-wrapper {
     display: flex;
@@ -866,8 +835,6 @@ form #submit {
     margin-top: 30px;
   }
 
-  /******** FORM PAGE ********/
-
   /**********Card lieu**********/
 
   .place1 {
@@ -898,19 +865,6 @@ form #submit {
     margin: 0;
     padding: 0;
     padding-top: 10%;
-  }
-
-  .form-container {
-    padding: 2em 15em;
-  }
-  .form-container .text-part {
-    text-align: center;
-  }
-  .form-container .form-part {
-    padding: 3em 10em;
-  }
-  textarea {
-    height: 150px;
   }
 
   /******** begin FOOTER desktop ********/
