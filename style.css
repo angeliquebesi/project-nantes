@@ -297,14 +297,14 @@ nav .primary-btn-container {
 }
 
 /******** FOOTER ********/
+/******** begin FOOTER ********/
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 5em;
-  padding: 2em 0 2em 0;
-  background-color: #f3f4f6;
-  border: 1px solid #e5e7eb;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 20em;
+  gap: 10px;
+  background-color: #F3F4F6;
+  border: 1px solid #E5E7EB;
 }
 footer a {
   text-decoration: none;
@@ -312,69 +312,134 @@ footer a {
 footer a:visited {
   color: inherit;
 }
-#footer-left {
-  margin-left: 4em;
+
+#footer-step1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  padding: 0em;
+  margin-top: 5em;
 }
-#footer-left p {
-  font-size: 0.75em;
+#footer-step1 .logo-container {
+  font-size: 2.2em;
+  margin:0;
 }
-#footer-center {
-  display: flex;
-  flex-wrap: wrap; /* let's wrap this, rows after rows */
-  gap: 5px;
+#footer-step1 .logo-container .logo {
+  margin:0;
+}
+#footer-step1 p {
+  font-size: 0.84em;
+  padding: 0em;
+}
+#footer-step2 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 0em;
+  margin-top: 2em;
   text-align: center;
 }
-#footer-center-links {
-  flex: 100%; /* using 100% to center content in all this wrap */
-  margin-bottom: 1em;
+#footer-step2 button {
+  width: 17em;
+  padding: 0.8em;
+  font-size: 1.2em;
+  margin-bottom: 0.6em;
 }
-#footer-center-links a {
+#footer-step3 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  text-align: center;
+  margin-top: 4em;
+}
+#footer-step3-links {
+  font-size: 1.7em;
+}
+#footer-step3-links a {
+  display: block;
   font-family: "Inter", sans-serif;
   color: #4b5563;
   font-size: 0.75em;
-  font-weight: 600;
+  margin-bottom: 1.5em;
 }
-#footer-center .github-icon {
-  flex: 100%;
-  font-size: 1.5em;
+
+#footer-step3-links .green-link {
+  color: #059669;
 }
-#footer-center .github-icon a {
-  /* not sure i'm using the best way to handle image-in-link here */
+#footer-step3 a.github-icon {
   color: transparent;
-  background: url("./github-icon-32px.png") no-repeat;
-  padding: 6px 4px 0px 17px;
+  background: url("./github-icon-32px.png") no-repeat center;
+  font-size: 1.2em;
+  margin-top: 2em;
 }
-#footer-center .small-text {
-  flex: 100%;
-  color: #9ca3af;
-  font-size: 0.65em;
-  margin: 0;
+#footer-bottom {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+  margin-bottom:3em;
 }
-#footer-center .small-link {
-  flex: 100%;
-  color: #9ca3af;
+
+#footer-bottom .copyright {
+  color: #9CA3AF;
+  font-size: 0.75em;
+  margin-bottom: 0.5em;
+}
+#footer-bottom .copyright-link {
+  color: #9CA3AF;
   font-size: 0.65em;
   text-decoration: underline;
+  font-family: "Inter", sans-serif;
 }
-#footer-right {
-  margin-right: 4em;
+
+/******** end FOOTER ********/
+
+.h4-category-card {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 130%;
+  color: #374151;
+  text-align: left;
+  margin-bottom: 15px;
 }
-#footer-right .btn-propose {
-  color: white;
-  background-color: #059669;
-  border: none;
-  border-radius: 6px;
-  padding: 0.5em 0 0.5em 0;
-  width: 12em;
-  margin-bottom: 1em;
-}
-#footer-right .btn-contactus {
+
+.para-category-card {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 130%;
   color: #6b7280;
-  background-color: transparent;
-  border: 1px solid #6b7280;
-  border-radius: 6px;
-  padding: 0.5em 0 0.5em 0;
-  width: 12em;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.card-category-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 85%;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.mini-label-category {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 11px;
+  line-height: 130%;
+  color: #6b7280;
+  text-align: left;
 }
 
 .h4-category-card {
@@ -616,7 +681,7 @@ form #submit {
     padding-right: 60px;
   }
 
-  /**********Card category**********/
+ /**********Card category**********/
 
   .category-grid-wrapper {
     max-width: 1200px;
@@ -627,6 +692,7 @@ form #submit {
     gap: 5px 15px;
     flex-wrap: wrap;
   }
+
 
   .card-category {
     display: flex;
@@ -738,5 +804,165 @@ form #submit {
   }
   textarea {
     height: 150px;
+
   }
+  /******** FORM PAGE ********/
+
+
+/**********Card lieu**********/
+
+.place1 {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 0fr);
+  gap: 30px 30px;
+  flex-wrap: wrap;
 }
+
+.picturesPlace-container {
+  grid-area: 1 / 1 / 4 / 2;
+  margin: 0;
+  padding: 0;
+}
+
+.infoUtile {
+  display : inline-flex;
+  margin :0;
+  padding: 0;
+  padding-bottom: 15%;
+  gap : 50px;
+}
+
+.placeName {
+  margin : 0;
+  padding : 0;
+  padding-top: 10%;
+}
+
+
+  .form-container {
+    padding: 2em 15em;
+  }
+  .form-container .text-part {
+    text-align: center;
+  }
+  .form-container .form-part {
+    padding: 3em 10em;
+  }
+  textarea {
+    height: 150px;
+  }
+
+/******** begin FOOTER desktop ********/
+footer {
+  display: grid;
+  grid-template-columns: 18em auto auto;
+  justify-content: space-between;
+  gap: 1em;
+  background-color: #F3F4F6;
+  border: 1px solid #E5E7EB;
+  padding-top: 3.7em;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:visited {
+  color: inherit;
+}
+#footer-step1 {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding: 0em;
+  margin-left: 3em;
+  margin-top: 0;
+}
+#footer-step1 .logo-container {
+  font-size: 1.65em;
+  margin:0;
+
+}
+#footer-step1 span {
+  font-weight: bold;
+
+}
+#footer-step1 .logo-container .logo {
+  margin:0;
+}
+#footer-step1 p {
+  font-size: 0.8em;
+  padding: 0em;
+  margin-top: 0.8em;
+  line-height: 1.2em;
+  width: 19em;
+}
+#footer-step2 {
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  padding: 0em;
+  margin:0;
+  margin-right: 3em;
+  margin-top: 0;
+ 
+}
+#footer-step2 button {
+  width: 12em;
+  padding: 0.6em;
+  font-size: 1em;
+  margin-bottom: 0.6em;
+}
+#footer-step3 {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  text-align: center;
+  margin-top: 0;
+
+}
+#footer-step3-links {
+  font-size: 1.7em;
+
+}
+#footer-step3-links a {
+  display: inline-block;
+  padding-left:1.1em;
+  padding-right:1.1em;
+  font-size: 0.65em;
+}
+#footer-step3-links .green-link {
+}
+#footer-step3 a.github-icon {
+  background: url("./github-icon-32px.png") no-repeat center;
+  font-size: 1.3em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+#footer-bottom {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  text-align: center;
+  margin-bottom:1em;
+}
+#footer-bottom .copyright {
+  font-size: 0.65em;
+  margin-bottom: 0.5em;
+  margin-top:0em;
+}
+#footer-bottom .copyright-link {
+  font-family: "Inter", sans-serif;
+  color: #9CA3AF;
+  font-size: 0.65em;
+  text-decoration: underline;
+}
+/******** end FOOTER desktop ********/
+
+}
+
