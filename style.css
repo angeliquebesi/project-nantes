@@ -517,7 +517,7 @@ form #submit {
   width: 100%;
 }
 
-// CATEGORY GRID - INDEX
+/* CATEGORY GRID - INDEX */
 
 .category-grid-wrapper {
   display: flex;
@@ -591,6 +591,49 @@ form #submit {
   font-family: Inter;
   font-weight: 500;
   color: #059669;
+}
+
+.section-about-people {
+  justify-items: center;
+  max-width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.people-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.people-div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  min-height: 70px;
+  align-items: center;
+}
+
+.people {
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  border: solid 1px #e5e7eb;
+}
+
+.people-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #059669;
+  text-align: center;
+  margin-top: 15px;
+}
+.people-title {
+  margin-top: 5px;
+  font-weight: 400;
+  font-size: 18px;
 }
 /*********************** RESPONSIVE ************************/
 
@@ -806,6 +849,18 @@ form #submit {
     height: 150px;
 
   }
+
+
+  .people-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 30px;
+  }
+
   /******** FORM PAGE ********/
 
 
