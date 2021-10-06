@@ -14,30 +14,38 @@
 
 
 <body>
-    <header>
-        <nav>
-          <div class="nav-container">
-             <!-- logo -->
-            <div class="logo-container">
-              <p class="logo"><em>Nantes</em><span>(autrement)</span></p>
-            </div>
-            <!-- navigation vers les autres pages -->
-            <div class="naviguation">
-              <!-- ajouter les bons liens par la suite  -->
-              <a href="categorie">catégorie</a>
-              <a href="Tous les lieux">Tous les lieux</a>
-              <a href="A propos">A propos</a>
-            </div>
-            <div class="burger-btn">
-              <div class="menu-btn">
-              <div class="menu-btn-burger"></div>
-            </div>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <!-- logo -->
+        <div class="logo-container">
+          <img src="./img/logo.jpg" alt="" />
+          <p class="logo"><em>Nantes</em><span>(autrement)</span></p>
+        </div>
+        <!-- navigation vers les autres pages -->
+        <div class="navigation">
+          <!-- ajouter liens " tous les lieux" -->
+          <a href="Category.html">Catégories</a>
+          <a href="Tous les lieux">Tous les lieux</a>
+          <a href="A propos"> <span>A propos</span></a>
+        </div>
+        <!-- boutton -->
+        <div class="burger-btn">
+          <div class="menu-btn">
+            <div class="menu-btn-burger"></div>
           </div>
-        </nav>
-    </header>
+        </div>
+        <div class="primary-btn-container">
+          <button class="primary">
+            <a href="FormsContact.html">Proposer un lieu</a>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
     <section class = "heroCategory">
-      <h1 class="text-center text-max-w-800 margin-auto-center padding-top-80">Selon différentes catégories</h1>
-      <h2 class="text-center text-max-w-500 margin-auto-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, error maiores eligendi quos explicabo accusantium?</h2>
+      <h1>Selon différentes catégories</h1>
+      <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, error maiores eligendi quos explicabo accusantium?</h2>
     </section>
 
     <section class = "place1">
@@ -55,8 +63,8 @@
 
         <!-- Insérer l'adresse et les horaires du lieu ainsi que les icones-->
         <div class ="infoUtile">
-          <p> <img src ="" alt ="icone de lieu"> Adresse </p>
-          <p> <img src = "" alt ="icone d'horaires">Horaires </p>
+          <p> <img src ="/img/place-item.JPG" alt ="icone de lieu"> Adresse </p>
+          <p> <img src = "/img/clock.JPG" alt ="icone d'horaires">Horaires </p>
         </div>
     </section>
 
@@ -75,8 +83,8 @@
 
       <!-- Insérer l'adresse et les horaires du lieu ainsi que les icones-->
       <div class ="infoUtile">
-        <p> <img src ="" alt ="icone de lieu"> Adresse </p>
-        <p> <img src = "" alt ="icone d'horaires">Horaires </p>
+        <p> <img src ="/img/place-item.JPG" alt ="icone de lieu"> Adresse </p>
+        <p> <img src = "/img/clock.JPG" alt ="icone d'horaires">Horaires </p>
       </div>
   </section>
 
@@ -95,8 +103,8 @@
 
     <!-- Insérer l'adresse et les horaires du lieu ainsi que les icones-->
     <div class ="infoUtile">
-      <p> <img src ="" alt ="icone de lieu"> Adresse </p>
-      <p> <img src = "" alt ="icone d'horaires">Horaires </p>
+      <p> <img src ="/img/place-item.JPG" alt ="icone de lieu"> Adresse </p>
+      <p> <img src = "/img/clock.JPG" alt ="icone d'horaires">Horaires </p>
     </div>
 </section>
 
@@ -107,22 +115,39 @@
 
       </div>
 
-      <div id="footer-center">
-        <div id="footer-center-links">
-          <a href="#">Catégories</a>
-          <a href="#">Tous les lieux</a>
-          <a href="#">A propos</a>
-        </div>
-        <div class="github-icon"><a href="#">a</a></div>
-        <p class="small-text">© 2021 NantesAutrement. All rights reserved.</p>
-        <a class="small-link" href="">Mentions légales</a>
-      </div>
+     <footer>
+  <div id="footer-step1">
+    <div class="logo-container">
+      <p class="logo"><em>Nantes</em><span>(autrement!)</span></p>
+    </div>
+    <p>
+      Un petit projet vous présentant les lieux les plus cools de Nantes.
+      <br />
+      Vous pouvez même participer !
+    </p>
+  </div>
 
-      <div id="footer-right">
-        <button class="btn-propose">Proposer un lieu</button>
-        <button class="btn-contactus">Nous contacter</button>
-      </div>
-    </footer>
+  <div id="footer-step2">
+    <button class="primary">Proposer un lieu</button>
+    <br>
+    <button class="secondary">Nous contacter</button>
+  </div>
+
+  <div id="footer-step3">
+    <div id="footer-step3-links">
+      <a href="#">Catégories</a>
+      <a href="#">Tous les lieux</a>
+      <a class="green-link" href="#">A propos</a>
+      <br>
+      <a class="github-icon" href="#">lien github</a>
+    </div>
+  </div>
+
+  <div id="footer-bottom">
+    <p class="copyright">© 2021 NantesAutrement. All rights reserved.</p>
+    <a class="copyright-link" href="">Mentions légales</a>
+  </div>
+</footer>
 
 </body>
 
