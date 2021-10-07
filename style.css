@@ -1,5 +1,7 @@
 /******** GLOBAL ********/
-
+html {
+  scroll-behavior: smooth;
+}
 /* prevents overflow caused by margins/padding & co */
 * {
   box-sizing: border-box;
