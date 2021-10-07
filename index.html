@@ -42,9 +42,9 @@
           </div>
           <!-- Modal -->
           <div class="primary-btn-container">
-            <button id = "btnPopup" class = "primary">Proposer un lieu </button>
-             <div id="overlay" class="overlay">
-             <div id= "popup" class="popup">
+            <button class = "btnPopup primary">Proposer un lieu </button>
+             <div class="overlay">
+             <div class="popup">
                <form class="form-container">
                  <h2>Proposer un lieu </h2>
                  <label for="email"><strong>E-mail</strong></label>
@@ -70,11 +70,22 @@
           Nous répertorions les spots nantais qui valent le détour, vous êtes
           invités à participer !
         </p>
+        <!-- Modal -->
         <div class="primary-btn-container">
-          <button class="primary">
-            <a href="contact.html">Proposer un lieu</a>
-          </button>
-        </div>
+          <button class = "btnPopup primary">Proposer un lieu </button>
+           <div class="overlay">
+           <div class="popup">
+             <form class="form-container">
+               <h2>Proposer un lieu </h2>
+               <label for="email"><strong>E-mail</strong></label>
+               <input type="text" placeholder="Votre Email" name="email" required>
+               <label for="text"> <strong>Votre suggestion</strong> </label>
+               <input type="text" placeholder="Votre suggestion" name="text" required>
+               <button type="submit" class="btnClose">Suggérer</button>
+             </form>
+           </div>
+           </div>
+         </div>
       </div>
       <!-- partie image -->
       <div class="hero-img"></div>

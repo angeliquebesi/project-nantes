@@ -1,11 +1,13 @@
-const btnPopup = document.getElementById('btnPopup');
-const overlay = document.getElementById('overlay');
-btnPopup.addEventListener('click',openMoadl);
-
-function openMoadl() {
+const btnPopup = document.querySelector('.btnPopup');
+const overlay = document.querySelector('.overlay');
+const btnClose = document.querySelector('.btnClose');
+btnPopup.addEventListener('click',openModal);
+btnClose.addEventListener ('click',closeModal);
+function openModal() {
     overlay.style.display='block';
 }
 
+btnClose.addEventListener ('click',closeModal);
 function closeModal() {
     overlay.style.display ='none';
 }
