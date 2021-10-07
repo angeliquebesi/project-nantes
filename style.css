@@ -835,7 +835,7 @@ form #submit {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 0fr);
-    gap: 30px 30px;
+    gap: 30px 60px;
     flex-wrap: wrap;
   }
 
