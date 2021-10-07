@@ -1,13 +1,10 @@
-const btnPopup = document.querySelector('.btnPopup');
-const overlay = document.querySelector('.overlay');
-const btnClose = document.querySelector('.btnClose');
-btnPopup.addEventListener('click',openModal);
-btnClose.addEventListener ('click',closeModal);
-function openModal() {
-    overlay.style.display='block';
-}
-
-btnClose.addEventListener ('click',closeModal);
-function closeModal() {
-    overlay.style.display ='none';
-}
+const modal = null
+ function pop() {
+   if(modal === null) {
+     document.getElementById("overlay").style.display = "block";
+     modal = true
+   } else {
+     document.getElementById("overlay").style.display = "none";
+     modal = null
+   }
+ }
