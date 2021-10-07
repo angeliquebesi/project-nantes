@@ -175,6 +175,8 @@ label {
 /**** BARRE NAV****/
 
 /*** nav container ***/
+header {
+}
 nav {
   border-bottom: solid 2px #e5e7eb;
 }
@@ -881,6 +883,9 @@ form #submit {
   }
   footer a {
     text-decoration: none;
+  }
+  #footer-step3 a:hover {
+    color: #059669;
   }
   footer a:visited {
     color: inherit;
