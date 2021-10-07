@@ -290,7 +290,7 @@ nav .primary-btn-container {
   align-items: stretch;
   align-content: center;
   justify-content: center;
-}
+  }
 
 .place1 img {
   max-width: 100%;
@@ -302,13 +302,29 @@ nav .primary-btn-container {
   padding-top : 30px;
 }
 
+.infoUtile {
+  padding-top : 30px;
+}
+.container-place {
+  display: flex;
+  align-items: center;
+}
+
+.container-horaire {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
 .infoUtile img {
   width: 30px;
   height: 30px;
+  margin : 10px;
 }
 
 .infoUtile p {
-  padding-top : 30px;
+  font-size: 14px;
+  font-weight: 400px;
 }
 
 /******** FOOTER ********/
@@ -886,6 +902,10 @@ form #submit {
     grid-area: 1 / 1 / 4 / 2;
     margin: 0;
     padding: 0;
+  }
+
+  .container-horaire {
+    padding-top: 0px;
   }
 
   .infoUtile {
