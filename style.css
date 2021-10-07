@@ -79,7 +79,7 @@ h3 {
   line-height: 130%;
   letter-spacing: -0.03em;
   color: #374151;
-  }
+}
 
 h4 {
   font-family: Inter;
@@ -299,7 +299,7 @@ nav .primary-btn-container {
 /* place marge */
 
 .textDescriptif {
-  padding-top : 30px;
+  padding-top: 30px;
 }
 
 .infoUtile img {
@@ -308,7 +308,7 @@ nav .primary-btn-container {
 }
 
 .infoUtile p {
-  padding-top : 30px;
+  padding-top: 30px;
 }
 
 /******** FOOTER ********/
@@ -344,7 +344,7 @@ footer a:visited {
   margin: 0;
 }
 #footer-step1 p {
-  font-size: 0.84em;
+  font-size: 1em;
   padding: 0em;
 }
 #footer-step2 {
