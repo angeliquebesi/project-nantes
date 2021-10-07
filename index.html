@@ -24,21 +24,45 @@
         <div class="nav-container">
           <!-- logo -->
           <div class="logo-container">
-            <a href="../index.html"><a href="../index.html"><img src="./img/logo.png" alt="" /> </a> </a>
+            <a href="./index.html"><img src="./img/logo.png" alt="" /></a>
             <p class="logo"><em>Nantes</em><span>(autrement)</span></p>
           </div>
           <!-- navigation vers les autres pages -->
           <div class="navigation">
             <!-- " menu deroulant categorie" -->
             <a href="#category">Catégories</a>
-            <a href="Tous les lieux">Tous les lieux</a>
+            <a href="Tous les lieux" class="a-hidden">Tous les lieux</a>
             <a href="about.html">A propos</a>
           </div>
           <!-- boutton -->
-          <div class="burger-btn">
-            <div class="menu-btn">
-              <div class="menu-btn-burger"></div>
-            </div>
+          <div class="icons">
+            <svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 32 42"
+              xmlns="http://www.w3.org/2000/svg"
+              onclick="this.classList.toggle('active')"
+            >
+              <g transform="matrix(1,0,0,1,-389.5,-264.004)">
+                <g id="arrow_left2">
+                  <g transform="matrix(1,0,0,1,0,5)">
+                    <path
+                      id="top"
+                      d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967"
+                    />
+                  </g>
+                  <g
+                    transform="matrix(1,1.22465e-16,1.22465e-16,-1,0.00024296,564.935)"
+                  >
+                    <path
+                      id="bottom"
+                      d="M390,270L420,270L420,270C420,270 420.195,250.19 405,265C389.805,279.81 390,279.967 390,279.967"
+                    />
+                  </g>
+                  <path id="middle" d="M390,284.967L420,284.967" />
+                </g>
+              </g>
+            </svg>
           </div>
           <!-- Modal -->
           <div class="primary-btn-container">
@@ -112,7 +136,11 @@
           </div>
           <div class="card-category-bottom">
             <p class="mini-label-category">3 spots</p>
-            <a href="./category_pages/gastronomie_category.html" class="link-category-card">Découvrir ↗︎</a>
+            <a
+              href="./category_pages/gastronomie_category.html"
+              class="link-category-card"
+              >Découvrir ↗︎</a
+            >
           </div>
         </div>
         <div class="card-category">
@@ -127,13 +155,17 @@
           </div>
           <div class="card-category-bottom">
             <p class="mini-label-category">2 spots</p>
-            <a href="./category_pages/art_category.html" class="link-category-card">Découvrir ↗︎</a>
+            <a
+              href="./category_pages/art_category.html"
+              class="link-category-card"
+              >Découvrir ↗︎</a
+            >
           </div>
         </div>
         <div class="card-category">
           <div class="card-category-header3"></div>
           <div class="card-category-body">
-            <p class="h4-category-card">By night</p>
+            <p class="h4-category-card">Soirées</p>
             <p class="para-category-card">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Suscipit, optio error consequatur ea molestiae molestias fugiat
@@ -142,7 +174,11 @@
           </div>
           <div class="card-category-bottom">
             <p class="mini-label-category">2 spots</p>
-            <a href="./category_pages/byNight_category.html" class="link-category-card">Découvrir ↗︎</a>
+            <a
+              href="./category_pages/soiree_category.html"
+              class="link-category-card"
+              >Découvrir ↗︎</a
+            >
           </div>
         </div>
         <div class="card-category">
@@ -157,7 +193,11 @@
           </div>
           <div class="card-category-bottom">
             <p class="mini-label-category">3 spots</p>
-            <a href="./category_pages/insolit_category.html" class="link-category-card">Découvrir ↗︎</a>
+            <a
+              href="./category_pages/insolit_category.html"
+              class="link-category-card"
+              >Découvrir ↗︎</a
+            >
           </div>
         </div>
       </div>
