@@ -14,8 +14,17 @@ icon.addEventListener("click", function(event) {
         nav.style.display ="flex"
     }
 
-
 })
+const modal = null
+ function pop() {
+   if(modal === null) {
+     document.getElementById("overlay").style.display = "block";
+     modal = true
+   } else {
+     document.getElementById("overlay").style.display = "none";
+     modal = null
+   }
+ }
 
 
 // $(window).scroll(function (event) {

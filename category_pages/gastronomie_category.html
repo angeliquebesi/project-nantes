@@ -64,9 +64,20 @@
             </svg>
           </div>
           <div class="primary-btn-container">
-            <button class="primary">
-              <a href="contact.html">Proposer un lieu</a>
-            </button>
+            <div class="primary-btn-container">
+              <button class = "btnPopup primary" onclick="pop()">Proposer un lieu </button>
+               <div id = "overlay" class="overlay">
+               <div class="popup">
+                 <form class="form-container">
+                   <h2>Proposer un lieu </h2>
+                   <label for="email"><strong>E-mail</strong></label>
+                   <input type="text" placeholder="Votre Email" name="email" required>
+                   <label for="text"> <strong>Votre suggestion</strong> </label>
+                   <input type="text" placeholder="Votre suggestion" name="text" required>
+                   <button type="submit" class="btnClose" onclick="pop()">Suggérer</button>
+                 </form>
+               </div>
+               </div>
           </div>
         </nav>
     </header>
@@ -194,9 +205,20 @@
       </div>
 
       <div id="footer-step2">
-        <button class="primary">
-          <a href="">Proposer un lieu</a>
-        </button>
+        <div class="primary-btn-container">
+          <button class = "btnPopup primary" onclick="pop()">Proposer un lieu </button>
+           <div id = "overlay" class="overlay">
+           <div class="popup">
+             <form class="form-container">
+               <h2>Proposer un lieu </h2>
+               <label for="email"><strong>E-mail</strong></label>
+               <input type="text" placeholder="Votre Email" name="email" required>
+               <label for="text"> <strong>Votre suggestion</strong> </label>
+               <input type="text" placeholder="Votre suggestion" name="text" required>
+               <button type="submit" class="btnClose" onclick="pop()">Suggérer</button>
+             </form>
+           </div>
+           </div>
         <br />
         <button class="secondary">
           <a href="../contact.html">Nous contacter</a>
@@ -218,6 +240,7 @@
         <a class="copyright-link" href="">Mentions légales</a>
       </div>
     </footer>
-    <script src="../script.js"></script>
+    <!-- Feuille de script-->
+    <script src="../script.js" ></script>
   </body>
 </html>
