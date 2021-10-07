@@ -418,6 +418,9 @@ footer a:visited {
   font-size: 1.2em;
   margin-bottom: 0.6em;
 }
+#footer-step2 button .secondary a {
+  color: #6b7280;
+}
 #footer-step3 {
   grid-column-start: 1;
   grid-column-end: 1;
@@ -443,7 +446,7 @@ footer a:visited {
 }
 #footer-step3 a.github-icon {
   color: transparent;
-  background: url("./github-icon-32px.png") no-repeat center;
+  background: url("./img/github-icon-32px_colorchanged.png") no-repeat center;
   font-size: 1.2em;
   margin-top: 2em;
 }
@@ -1004,10 +1007,14 @@ form #submit {
     font-size: 0.65em;
   }
   #footer-step3 a.github-icon {
+    color: transparent;
     background: url("./img/github-icon-32px_colorchanged.png") no-repeat center;
     font-size: 1.3em;
     margin-top: 0em;
     margin-bottom: 0em;
+  }
+  #footer-step3 a.github-icon:hover {
+    color: transparent;
   }
   #footer-bottom {
     grid-column-start: 2;
