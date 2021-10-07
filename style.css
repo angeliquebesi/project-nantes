@@ -79,7 +79,7 @@ h3 {
   line-height: 130%;
   letter-spacing: -0.03em;
   color: #374151;
-}
+  }
 
 h4 {
   font-family: Inter;
@@ -153,6 +153,64 @@ label {
   padding: 0.5em 0 0.5em 0;
 }
 
+/*LE MODAL*/
+/* Positionnez la forme Popup */
+.btnPopup {
+  cursor : pointer;
+}
+/* Masquez la forme Popup */
+.overlay{
+display : none;
+z-index : 1;
+position: fixed;
+left : 30%;
+top : 10%;
+width: 100%;
+height: 100%;
+max-width: 300%;
+}
+
+/* Styles pour le conteneur de la forme */
+.form-container {
+width: 100%;
+max-width : 35%;
+padding: 45px;
+background-color: #f9fafb;
+box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+border-radius: 12px;
+border : 1px solid #a2a3a5;
+}
+
+.form-container h2 {
+  padding-bottom: 0;
+}
+
+/* Largeur complète pour les champs de saisie */
+.form-container input{
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: rgb(230, 229, 229);
+}
+/* Quand les entrées sont concentrées, faites quelque chose */
+.form-container input:focus {
+background-color: #ddd;
+outline: none;
+}
+/* Stylez le bouton de connexion */
+.form-container .btnClose {
+  color: white;
+  background-color: #059669;
+  border: none;
+  border-radius: 6px;
+  padding: 1em 0;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
 /* partie logo */
 .logo-container {
   align-self: center;
@@ -175,8 +233,6 @@ label {
 /**** BARRE NAV****/
 
 /*** nav container ***/
-header {
-}
 nav {
   border-bottom: solid 2px #e5e7eb;
 }
@@ -299,32 +355,16 @@ nav .primary-btn-container {
 /* place marge */
 
 .textDescriptif {
-  padding-top: 30px;
-}
-
-.infoUtile {
-  padding-top: 30px;
-}
-.container-place {
-  display: flex;
-  align-items: center;
-}
-
-.container-horaire {
-  display: flex;
-  align-items: center;
-  padding-top: 30px;
+  padding-top : 30px;
 }
 
 .infoUtile img {
   width: 30px;
   height: 30px;
-  margin: 10px;
 }
 
 .infoUtile p {
-  font-size: 14px;
-  font-weight: 400px;
+  padding-top : 30px;
 }
 
 /******** FOOTER ********/
@@ -570,36 +610,6 @@ form #submit {
   background-size: cover;
   background-position: center;
 }
-.card-category-header1 {
-  min-height: 40%;
-  width: 100%;
-  height: 120px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  background-image: url("./img/gastronomie_index.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.card-category-header2 {
-  min-height: 40%;
-  width: 100%;
-  height: 120px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  background-image: url("./img/art_index.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.card-category-header3 {
-  min-height: 40%;
-  width: 100%;
-  height: 120px;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  background-image: url("./img/soiree_index.jpg");
-  background-size: cover;
-  background-position: center;
-}
 
 .card-category-body {
   width: 85%;
@@ -785,7 +795,7 @@ form #submit {
   /**********Card category**********/
 
   .category-grid-wrapper {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -803,13 +813,6 @@ form #submit {
     border: solid 1px #f3f4f6;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  }
-
-  .card-category:hover {
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
-    transition-property: box-shadow;
-    transition-duration: 0.25s;
-    transition-delay: 0s;
   }
 
   .card-category-header {
@@ -913,10 +916,6 @@ form #submit {
     padding: 0;
   }
 
-  .container-horaire {
-    padding-top: 0px;
-  }
-
   .infoUtile {
     display: inline-flex;
     margin: 0;
@@ -943,9 +942,6 @@ form #submit {
   }
   footer a {
     text-decoration: none;
-  }
-  #footer-step3 a:hover {
-    color: #059669;
   }
   footer a:visited {
     color: inherit;
