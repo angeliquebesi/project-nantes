@@ -809,7 +809,7 @@ form #submit {
     color: #059669;
   }
   /******** FORM PAGE ********/
-  
+
   .form-container .text-part {
     text-align: center;
   }
@@ -822,7 +822,7 @@ form #submit {
     height: 150px;
   }
 
-   /******** ABOUT PAGE ********/
+  /******** ABOUT PAGE ********/
 
   .people-wrapper {
     display: flex;
@@ -897,7 +897,7 @@ form #submit {
     font-size: 1.65em;
     margin: 0;
   }
-  
+
   #footer-step1 span {
     font-weight: bold;
   }
@@ -969,5 +969,9 @@ form #submit {
     font-size: 0.65em;
     text-decoration: underline;
   }
+  #scroll-container {
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+  }
 }
-  /******** end FOOTER desktop ********/
+/******** end FOOTER desktop ********/
