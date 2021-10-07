@@ -968,5 +968,9 @@ form #submit {
     font-size: 0.65em;
     text-decoration: underline;
   }
+  #scroll-container {
+    scroll-behavior: auto;
+    scroll-behavior: smooth;
+  }
 }
 /******** end FOOTER desktop ********/
