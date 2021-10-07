@@ -153,6 +153,64 @@ label {
   padding: 0.5em 0 0.5em 0;
 }
 
+/*LE MODAL*/
+/* Positionnez la forme Popup */
+.btnPopup {
+  cursor : pointer;
+}
+/* Masquez la forme Popup */
+.overlay{
+display : none;
+z-index : 1;
+position: fixed;
+left : 30%;
+top : 10%;
+width: 100%;
+height: 100%;
+max-width: 300%;
+}
+
+/* Styles pour le conteneur de la forme */
+.form-container {
+width: 100%;
+max-width : 35%;
+padding: 45px;
+background-color: #f9fafb;
+box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+border-radius: 12px;
+border : 1px solid #a2a3a5;
+}
+
+.form-container h2 {
+  padding-bottom: 0;
+}
+
+/* Largeur complète pour les champs de saisie */
+.form-container input{
+width: 100%;
+padding: 10px;
+margin: 5px 0 22px 0;
+border: none;
+background: rgb(230, 229, 229);
+}
+/* Quand les entrées sont concentrées, faites quelque chose */
+.form-container input:focus {
+background-color: #ddd;
+outline: none;
+}
+/* Stylez le bouton de connexion */
+.form-container .btnClose {
+  color: white;
+  background-color: #059669;
+  border: none;
+  border-radius: 6px;
+  padding: 1em 0;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
 /* partie logo */
 .logo-container {
   align-self: center;

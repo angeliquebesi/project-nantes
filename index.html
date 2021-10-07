@@ -40,11 +40,22 @@
               <div class="menu-btn-burger"></div>
             </div>
           </div>
+          <!-- Modal -->
           <div class="primary-btn-container">
-            <button class="primary">
-              <a href="contact.html">Proposer un lieu</a>
-            </button>
-          </div>
+            <button id = "btnPopup" class = "primary">Proposer un lieu </button>
+             <div id="overlay" class="overlay">
+             <div id= "popup" class="popup">
+               <form class="form-container">
+                 <h2>Proposer un lieu </h2>
+                 <label for="email"><strong>E-mail</strong></label>
+                 <input type="text" placeholder="Votre Email" name="email" required>
+                 <label for="text"> <strong>Votre suggestion</strong> </label>
+                 <input type="text" placeholder="Votre suggestion" name="text" required>
+                 <button type="submit" class="btnClose">Suggérer</button>
+               </form>
+             </div>
+             </div>
+           </div>
         </div>
       </nav>
     </header>
@@ -189,5 +200,8 @@
         <a class="copyright-link" href="">Mentions légales</a>
       </div>
     </footer>
+
+<!-- Feuille de script-->
+    <script src="./script.js" ></script>
   </body>
 </html>
