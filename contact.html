@@ -24,16 +24,17 @@
         <div class="nav-container">
           <!-- logo -->
           <div class="logo-container">
-            <a href="../index.html"><img src="./img/logo.png" alt="" /> </a>
+            <a href="./index.html"><img src="./img/logo.png" alt="" /></a>
             <p class="logo"><em>Nantes</em><span>(autrement)</span></p>
           </div>
           <!-- navigation vers les autres pages -->
           <div class="navigation">
-            <!-- ajouter les bons liens par la suite  -->
-            <a href="index.html #category">Catégories</a>
-            <a href="#" class="a-hidden">Tous les lieux</a>
+            <!-- " menu deroulant categorie" -->
+            <a href="#category">Catégories</a>
+            <a href="Tous les lieux" class="a-hidden">Tous les lieux</a>
             <a href="about.html">A propos</a>
           </div>
+          <!-- boutton -->
           <div class="icons">
             <svg
               width="30px"
@@ -62,25 +63,27 @@
                 </g>
               </g>
             </svg>
-            <div class="primary-btn-container">
-              <div class="primary-btn-container">
-                <button class = "btnPopup primary" onclick="pop()">Proposer un lieu </button>
-                 <div id = "overlay" class="overlay">
-                 <div class="popup">
-                   <form class="form-container">
-                     <h2>Proposer un lieu </h2>
-                     <label for="email"><strong>E-mail</strong></label>
-                     <input type="text" placeholder="Votre Email" name="email" required>
-                     <label for="text"> <strong>Votre suggestion</strong> </label>
-                     <input type="text" placeholder="Votre suggestion" name="text" required>
-                     <button type="submit" class="btnClose" onclick="pop()">Suggérer</button>
-                   </form>
-                 </div>
-                 </div>
           </div>
+          <!-- Modal -->
+          <div class="primary-btn-container">
+            <button class = "btnPopup primary" onclick="pop()">Proposer un lieu </button>
+             <div id = "overlay" class="overlay">
+             <div class="popup">
+               <form class="form-container">
+                 <h2>Proposer un lieu </h2>
+                 <label for="email"><strong>E-mail</strong></label>
+                 <input type="text" placeholder="Votre Email" name="email" required>
+                 <label for="text"> <strong>Votre suggestion</strong> </label>
+                 <input type="text" placeholder="Votre suggestion" name="text" required>
+                 <button type="submit" class="btnClose" onclick="pop()">Suggérer</button>
+               </form>
+             </div>
+             </div>
+           </div>
         </div>
       </nav>
     </header>
+
     <!-- block formulaire-->
     <div class="form-container">
       <div class="text-part">
