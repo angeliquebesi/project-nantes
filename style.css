@@ -580,9 +580,14 @@ footer a:visited {
 }
 
 /******** FORM PAGE ********/
-.form-container {
-  padding: 2em;
-}
+.form-container .text-part {
+    text-align: center;
+  }
+  .form-container .form-part {
+    padding: 0;
+    max-width: 500px;
+    margin: auto;
+  }
 .text-part {
   padding-bottom: 2em;
 }
@@ -959,17 +964,35 @@ max-width: 300%;
   }
   /******** FORM PAGE ********/
 
-  .form-container .text-part {
-    text-align: center;
-  }
-  .form-container .form-part {
-    padding: 0;
-    max-width: 500px;
-    margin: auto;
-  }
-  textarea {
-    height: 150px;
-  }
+ .form-container {
+  padding: 2em;
+}
+.text-part {
+  padding-bottom: 2em;
+}
+.text-part h1,
+p {
+  margin: 0;
+}
+.form-part {
+  padding: 0 1em;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-top: 0.1em;
+  border-radius: 5px;
+  border: solid 1px #9ca3af;
+  padding: 0.4em 0.5em;
+}
+textarea {
+  height: 100px;
+  margin-bottom: 0.8em;
+}
+form #submit {
+  width: 100%;
+}
 
   /******** ABOUT PAGE ********/
 
