@@ -448,8 +448,8 @@ footer a:visited {
   font-size: 1.2em;
   margin-bottom: 0.6em;
 }
-#footer-step2 button .secondary a {
-  color: #6b7280;
+#footer-step2 .secondary a {
+  color: #4b5563;
 }
 #footer-step3 {
   grid-column-start: 1;
