@@ -580,10 +580,10 @@ footer a:visited {
 }
 
 /******** FORM PAGE ********/
-.form-container .text-part {
+.form-container2 .text-part {
     text-align: center;
   }
-  .form-container .form-part {
+.form-container2 .form-part {
     padding: 0;
     max-width: 500px;
     margin: auto;
@@ -964,7 +964,7 @@ max-width: 300%;
   }
   /******** FORM PAGE ********/
 
- .form-container {
+ .form-container2 {
   padding: 2em;
 }
 .text-part {
