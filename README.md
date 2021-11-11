@@ -1,5 +1,5 @@
 # project-nantes
-Premier projet en équipe à voir sur https://angeliquebesi.github.io/project-nantes/
+Premier projet en équipe à voir sur https://kvnmrs.github.io/WCS_Projet_1/
 (Site web vitrine, non fonctionnel)
 
 De passage sur Nantes ? 
